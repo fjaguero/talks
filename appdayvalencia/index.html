@@ -1,0 +1,224 @@
+<!DOCTYPE HTML>
+<html lang="es-ES" class="fade">
+
+<head>
+  <title>Responsive Design y herramientas dev - Fernando Agüero - Firefox OS App Day Valencia</title>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=1274, user-scalable=no">
+  <link rel="stylesheet" href="themes/mozilla/styles/style.css">
+  <style type="text/css">
+    .talkdescription {
+      font-size: 12px;
+      color: #fff;
+      width: 80%;
+    }
+    .full .talkdescription {
+      display: none;
+    }
+    .slide blockquote.lots {
+      font-size: 30px;
+    }
+    .demourl {
+      bottom: 20px;
+    }
+    .quotesource::before {
+      content: '~';
+    }
+    #reveal {
+      float: right;
+      margin: 20px 0 0 20px;
+      background: #fff;
+      position: relative;
+    }
+    #reveal img {
+      width: 200px;
+      z-index: 5;
+      display: block;
+      opacity: 0.5;
+      -webkit-transition: 2s;
+      -moz-transition: 2s;
+      -o-transition: 2s;
+      transition: 2s;
+    }
+    #reveal:hover img {
+      opacity: 1;
+    }
+  </style>
+</head>
+<body class="list">
+
+  <header class="caption">
+    <h1>Responsive Design y herramientas Dev</h1>
+    <p class="footer">Fernando Agüero, <a href="http://twitter.com/fjaguero">@fjaguero</a></p>
+    <p class="footer">Firefox OS App Day - 01/06/13 - Valencia, España</p>
+  </header>
+
+  <div id="cover" class="slide cover"><div>
+    <section>
+
+       <img src="pictures/appday/the_future.jpg" alt="Be The Future" class="middle">
+
+      <small class="byline" style="color:#FFF;padding-right: 50px;">
+          Firefox OS App Day - 01/06/13 - Valencia, España
+      </small>
+    </section>
+  </div></div>
+
+<div id="media-queries" class="slide"><div>
+    <section>
+      <header>
+        <h2>Media Queries</h2>
+      </header>
+    <figure class="middle shadow frame">
+      <img src="pictures/appday/media-quieries.png" alt="Media Queries" class="middle">
+    </figure>
+
+    </section>
+  </div>
+</div>
+
+<div id="utility-classes" class="slide"><div>
+    <section>
+      <header>
+        <h2>Utility Classes</h2>
+      </header>
+    <figure class="middle shadow frame">
+      <img src="pictures/appday/classes.png" alt="Media Queries" class="middle">
+    </figure>
+
+     <ul class="oneline demourl">
+        <li>Más velocidad de desarrollo</li>
+      </ul>
+
+    </section>
+  </div>
+</div>
+
+<div id="mobile-first" class="slide"><div>
+    <section>
+      <header>
+        <h2>Mobile First</h2>
+      </header>
+    <figure class="middle">
+      <img src="pictures/appday/mobile-first.png" alt="Media Queries" class="middle">
+    </figure>
+
+    </section>
+  </div>
+</div>
+
+<div id="mobile-first-css" class="slide"><div>
+    <section>
+      <header>
+        <h2>Mobile First</h2>
+      </header>
+    <figure class="middle shadow frame">
+      <img src="pictures/appday/mobile-first-css.png" alt="Mobile First" class="middle">
+    </figure>
+
+    </section>
+  </div>
+</div>
+
+<div id="tools-testing-responsive" class="slide"><div>
+    <section>
+      <header>
+        <h2>Herramientas de testing</h2>
+      </header>
+    <figure class="middle shadow frame">
+      <img src="pictures/appday/testing.jpg" alt="Testing" class="middle">
+    </figure>
+
+    </section>
+  </div>
+</div>
+
+<div id="one-step-forward" class="slide"><div>
+    <section>
+      <header>
+        <h2>One step forward</h2>
+      </header>
+
+    <ul class="inner">
+        <li class="active">Elemento Picture: Optimización de cargas de imágenes. Picturefill</li>
+      <li>Flexbox: Flexible layout</li>
+      <li>Rem: Adaptive Typography</li>
+      <li>Native inputs</li>
+       <li><a href="http://mobile.smashingmagazine.com/2013/05/29/the-state-of-responsive-web-design/"><mark>Y mucho más cada día</mark></a></li>
+  </ul>
+
+    </section>
+  </div>
+</div>
+
+<div id="reinventing-wheel" class="slide cover h"><div>
+    <section>
+      <header>
+        <h2>No reinventes la rueda</h2>
+      </header>
+      <img src="pictures/appday/thewheel.jpg" alt="Media Queries" class="middle">
+
+    </section>
+  </div>
+</div>
+
+<div id="use-a-framework" class="slide"><div>
+    <section>
+      <header>
+        <h2>Prototipando con Frameworks</h2>
+      </header>
+    <figure class="middle shadow frame">
+      <img src="pictures/appday/foundationdevices.jpg" alt="Media Queries" class="middle">
+    </figure>
+
+     <ul class="oneline demourl">
+      <li>Bootstrap, Foundation, Lungo, entre muchos otros</li>
+    </ul>
+
+    </section>
+  </div>
+</div>
+
+
+<div id="nosdk" class="slide"><div>
+  <section>
+    <header>
+      <h2>¡NO SDK!</h2>
+    </header>
+     <figure class="middle">
+      <img src="pictures/appday/lungo.png" alt="Manifest" class="middle">
+    </figure>
+     <ul class="oneline demourl">
+      <li>Prueba de app simple con Lungo + Angular + Mongo</li>
+    </ul>
+  </section>
+</div>
+</div>
+
+
+  <div id="thanks" class="slide"><div>
+    <section>
+      <header>
+        <h2>Gracias</h2>
+      </header>
+        <figure class="frame middle swing">
+        <img src="pictures/appday/CuteFirefoxGoodbye.png"
+             width="600"
+             alt="that's all firefox">
+        </figure>
+      <ul class="oneline demourl">
+        <li>Fernando Agüero</li>
+        <li><a href="http://twitter.com/fjaguero">@fjaguero</a></li>
+      </ul>
+    <footer class="notes">
+    </footer>
+    </section>
+  </div></div>
+
+  <div class="progress"><div></div></div>
+
+  <script src="scripts/script.js"></script>
+  <!-- Copyright © 2010–2012 Vadim Makeev — pepelsbey.net -->
+</body>
+</html>

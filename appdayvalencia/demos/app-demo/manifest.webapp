@@ -1,0 +1,14 @@
+{
+  "name": "App Day Test",
+  "description": "App Day Test Firefox OS",
+  "launch_path": "/index.html",
+  "icons": {
+    "128": "/img/icon.png"
+  },
+  "installs_allowed_from": ["*"],
+  "developer": {
+    "name": "Fernando Agüero",
+    "url": "http://www.mozilla-hispano.org/labs/"
+  },
+  "default_locale": "es"
+}

@@ -1,0 +1,129 @@
+<!doctype html>
+<html ng-app="project">
+<head>
+    <meta charset="utf-8">
+    <title>Ejemplo Firefox OS App</title>
+    <meta name="description" content="">
+    <meta name="author" content="Fernando Agüero (@fjaguero)">
+    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+
+
+<link rel="stylesheet" href="http://twitter.github.com/bootstrap/assets/css/bootstrap.css">
+
+ <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.0.6/angular.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.0.6/angular-resource.min.js">
+</script>
+
+<style type="text/css">
+input.search-query {
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  height: 30px;
+  margin-bottom: 20px;
+  margin-top: 15px;
+  width: 100%;
+}
+
+.ng-pristine.ng-valid.ng-valid-required {
+  -moz-box-sizing: border-box;
+}
+</style>
+
+
+<script src="project.js"></script>
+<script src="mongolab.js"></script>
+
+<link rel="icon" href="/img/icon-16.png" type="image/png">
+<link rel="shortcut icon" href="/img/icon-16.png" type="image/png">
+<link rel="chrome-webstore-item" href="https://chrome.google.com/webstore/detail/fmhhfckkpfjfnamfbchnfbbkeblkccgj">
+
+    <!-- Main Stylesheet -->
+    <link rel="stylesheet" href="components/lungo/lungo.css">
+    <link rel="stylesheet" href="components/lungo/lungo.icon.css">
+    <link rel="stylesheet" href="components/lungo/lungo.icon.brand.css">
+    <link rel="stylesheet" href="components/lungo/lungo.css">
+    <link rel="stylesheet" href="components/lungo/theme.lungo.css">
+</head>
+
+<body class="app">
+
+<!-- Inicio de la app -->
+<section id="main" data-transition="slide">
+
+<header data-title="App Day Valencia">
+  <nav class="right">
+      <a id="install" href="#/new" data-icon="plus"></a>
+  </nav>
+</header>
+
+<article id="main-article" class="active list indented scroll">
+
+  <div ng-view></div>
+
+</article>
+
+
+<article id="test" class="list indented">
+
+
+  <h1>Hello World</h1>
+
+
+</article>
+
+
+  <footer>
+      <nav>
+          <a href="#main-article" data-icon="home" class="active" data-router="article"></a>
+          <a href="#test" data-icon="icon brand git" data-router="article"></a>
+      </nav>
+  </footer>
+
+</section>
+    <!-- Fin de tu app -->
+
+  <!-- Angular Listing -->
+  <script type="text/ng-template" id="detail.html">
+    <form name="myForm">
+      <div class="control-group" ng-class="{error: myForm.name.$invalid}">
+        <label>Nombre Tecnología</label>
+        <input type="text" name="name" ng-model="project.name" required>
+        <span ng-show="myForm.name.$error.required" class="help-inline">
+            Required</span>
+      </div>
+
+      <div class="control-group" ng-class="{error: myForm.site.$invalid}">
+        <label>Website</label>
+        <input type="url" name="site" ng-model="project.site" required>
+        <span ng-show="myForm.site.$error.required" class="help-inline">
+            Required</span>
+        <span ng-show="myForm.site.$error.url" class="help-inline">
+            Not a URL</span>
+      </div>
+
+      <label>Descripción</label>
+      <textarea name="description" ng-model="project.description"></textarea>
+
+      <br>
+      <a href="#/" class="btn">Back</a>
+      <button ng-click="save()" ng-disabled="isClean() || myForm.$invalid"
+              class="btn btn-primary">Save</button>
+      <button ng-click="destroy()"
+              ng-show="project._id" class="btn btn-danger">Delete</button>
+    </form>
+  </script>
+
+    <!-- Webapp libraries -->
+    <script src="components/base.js"></script>
+    <!-- Lungo - Dependencies -->
+    <script src="components/quojs/quo.js"></script>
+    <script src="components/lungo/lungo.js"></script>
+    <!-- Lungo - Sandbox App -->
+    <script>
+        Lungo.init({
+            name: 'Ejemplo Firefox OS App'
+        });
+    </script>
+<script async data-main="js/app" src="js/lib/require.js" charset="utf-8"></script>
+</body>
+</html>
