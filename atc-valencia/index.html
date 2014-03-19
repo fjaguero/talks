@@ -1,0 +1,547 @@
+<!DOCTYPE HTML>
+<html lang="es-ES" class="fade">
+
+<head>
+	<title>Firefox OS - App Trade Centre</title>
+
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=1274, user-scalable=no">
+	<link rel="stylesheet" href="themes/mozilla/styles/style.css">
+	<style type="text/css">
+		/* Add your own styles here */
+		.talkdescription {
+			font-size: 12px;
+			color: #fff;
+			width: 80%;
+		}
+		.full .talkdescription {
+			display: none;
+		}
+		.slide blockquote.lots {
+			font-size: 30px;
+		}
+		.demourl {
+			bottom: 20px;
+		}
+		.quotesource::before {
+			content: '~';
+		}
+		#reveal {
+			float: right;
+			margin: 20px 0 0 20px;
+			background: #fff;
+			position: relative;
+		}
+		#reveal img {
+			width: 200px;
+			z-index: 5;
+			display: block;
+			opacity: 0.5;
+			-webkit-transition: 2s;
+			-moz-transition: 2s;
+			-o-transition: 2s;
+			transition: 2s;
+		}
+		#reveal:hover img {
+			opacity: 1;
+		}
+	</style>
+</head>
+<body class="list">
+
+	<header class="caption">
+		<h1>Firefox OS</h1>
+		<p class="footer speaker">Fernando Agüero, <a href="http://twitter.com/fjaguero">@fjaguero</a></p>
+		<p class="footer speaker">App Trade Centre - 24/10/13 - Valencia, Spain</p>
+	</header>
+
+
+<div id="cover" class="slide cover"><div>
+		<section>
+			 <img src="pictures/the_future.jpg" alt="Be The Future" class="middle">
+			<small class="byline keynote-details">
+			App Trade Centre - 24/10/13 - Valencia, Spain
+			</small>
+		</section>
+	</div>
+</div>
+
+<div id="intro" class="slide">
+	<div>
+		<section>
+			<header>
+				<h2>Who am I?</h2>
+			</header>
+
+				<img src="pictures/fjaguero-avatar.jpg" class="right" alt="Welcome">
+
+			<ul>
+				<li>My name is Fernando Agüero</li>
+				<li>Community member at Mozilla Hispano</li>
+				<li>Frontend  Developer at Aluana Labs</li>
+				<li>On Twitter - @fjaguero</li>
+			</ul>
+
+
+		</section>
+	</div>
+</div>
+
+
+<div id="what-mozilla-hispano" class="slide">
+	<div>
+		<section>
+			<header>
+				<h2>What is Mozilla?</h2>
+			</header>
+		<figure class="middle">
+			<img src="pictures/mozilla.png" alt="" class="middle">
+		</figure>
+		</section>
+	</div>
+</div>
+
+<div id="community" class="slide"><div>
+		<section>
+			<header>
+				<h2>Community powered </h2>
+			</header>
+		<figure class="middle shadow frame">
+			<img src="pictures/comunidad.jpg" alt="" class="middle">
+		</figure>
+		</section>
+	</div>
+</div>
+
+<div id="morethanfirefox" class="slide"><div>
+		<section>
+			<header>
+				<h2>Ongoing work&hellip;</h2>
+			</header>
+			<img src="pictures/mozillamore.png" class="middle" alt="Mozilla is more than Firefox">
+		</section>
+	</div>
+</div>
+
+
+<div id="a-new-challenge" class="slide cover w"><div>
+		<section>
+			<header>
+				<h2>A new challenge</h2>
+			</header>
+			<img src="pictures/responsive.jpg" class="middle" alt="Responsive Design">
+			<small class="credits"><a href="http://www.flickr.com/photos/indyplanets/5693612984/">Photo by Jason Weaver</a></small>
+		</section>
+	</div>
+</div>
+
+<div id="fxos-intro" class="slide"><div>
+		<section>
+		<figure class="middle">
+			<img src="pictures/firefox-os-logo.png" alt="Firefox OS" class="middle">
+		</figure>
+		</section>
+	</div>
+</div>
+
+<div id="hardware-lockout" class="slide cover w"><div>
+		<section>
+			<header>
+				<h2>Hardware lockout</h2>
+			</header>
+			<img src="pictures/lockout.jpg" class="middle" alt="Very obvious road block">
+			<small class="credits">
+				<a href="http://www.flickr.com/photos/old_sarge/100926333/">Photo by Doug Geisler</a>
+			</small>
+		</section>
+	</div>
+</div>
+
+
+<div id="webapis" class="slide"><div>
+		<section>
+			<header>
+				<h2>Web API work</h2>
+			</header>
+			<img src="pictures/hardware-blowup.png" class="middle" alt="All the hardware in a mobile with info to the corresponding Web API spec and implementation status">
+			<p class="demourl">
+				<a href="http://arewemobileyet.com">http://arewemobileyet.com</a>
+			</p>
+		</section>
+	</div>
+</div>
+
+<div id="what-is-firefoxos" class="slide"><div>
+		<section>
+			<header>
+				<h2>What is Firefox OS</h2>
+			</header>
+			<img src="pictures/arquitectura-firefox.png" width="60%" class="middle" alt="Firefox OS">
+			<p class="demourl">
+				GONK + GECKO + GAIA
+			</p>
+		</section>
+	</div>
+</div>
+
+
+<div id="what-is-firefoxos2" class="slide"><div>
+		<section>
+			<header>
+				<h2>Firefox on Firefox OS</h2>
+			</header>
+			<img src="pictures/inception.jpg" class="middle" alt="A browser inside a browser?">
+			<p class="demourl">
+				A browser inside a browser?
+			</p>
+		</section>
+	</div>
+</div>
+
+ <div id="just-javascript" class="slide">
+ <div>
+	<section>
+		<header>
+			<h2>Just -Powerful- Javascript</h2>
+		</header>
+		 <figure class="middle shadow frame">
+			<img width="720px" src="pictures/sms.png" alt="SMS API Example" class="middle">
+		</figure>
+
+		 <ul class="oneline demourl">
+			<li>SMS API Example</li>
+		</ul>
+	</section>
+</div>
+</div>
+
+<div id="partners-hardware" class="slide"><div>
+	<section>
+			<header>
+				<h2>In good company</h2>
+			</header>
+		 <figure class="middle shadow frame">
+			<img width="420px" src="pictures/manufacturers.png" alt="Manufacturers" class="middle">
+		</figure>
+		 <ul class="oneline demourl">
+				<li>LG just launched "LG Fireweb" on Brasil</li>
+			</ul>
+		</section>
+	</div>
+</div>
+
+<div id="launched" class="slide"><div>
+		<section>
+			<header>
+				<h2>Already Launched</h2>
+			</header>
+		 <ul>
+				<li class="active"><strong>Telefonica:</strong> Spain, Brasil, Colombia and Venezuela</li>
+				<li><strong>Deutsche Telekom:</strong> Poland</li>
+				<li><strong>Congstar:</strong> Germany</li>
+			</ul>
+		</section>
+	</div>
+</div>
+
+<div id="launching" class="slide"><div>
+		<section>
+			<header>
+				<h2>Launching soon</h2>
+			</header>
+		<ul>
+				<li class="active">Greece</li>
+				<li>Hungary</li>
+				<li>Serbia and Montenegro</li>
+			</ul>
+
+		</section>
+	</div>
+</div>
+
+ <div id="marketplace-why" class="slide"><div>
+		<section>
+			<header>
+				<h2>Marketplace</h2>
+			</header>
+				<figure class="middle shadow frame">
+				<img src="pictures/marketplace.jpg" alt="Marketplace" class="middle">
+			</figure>
+			 <ul class="oneline demourl">
+				<li>One official marketplace. Have your own descentralized market.</li>
+			</ul>
+		</section>
+	</div></div>
+
+
+
+<div id="marketplace-partners" class="slide"><div>
+	<section>
+			<header>
+				<h2>In the market</h2>
+			</header>
+		 <figure class="middle shadow frame">
+			<img width="420px" src="pictures/marketplace-partners.png" alt="Manufacturers" class="middle">
+		</figure>
+		 <ul class="oneline demourl">
+				<li>Google recently launched its official Youtube app</li>
+			</ul>
+		</section>
+	</div>
+</div>
+
+<div id="payments" class="slide"><div>
+		<section>
+			<header>
+				<h2>Easy WebPayments</h2>
+			</header>
+			 <figure class="middle shadow frame">
+				<img width="820px" src="pictures/webpayments.png" alt="Manifest" class="middle">
+			</figure>
+			 <ul class="oneline demourl">
+				<li>In-app payments</li>
+			</ul>
+		</section>
+	</div>
+</div>
+
+<div id="whatsapp" class="slide"><div>
+		<section>
+			<header>
+				<h2>Whatsapp coming this year</h2>
+			</header>
+			 <figure class="middle shadow frame">
+				<img width="520px" src="pictures/whatsapp.jpg" alt="Whatsapp" class="middle">
+			</figure>
+		</section>
+	</div>
+</div>
+
+
+<div id="whatsapp-free" class="slide shout"><div>
+	<section>
+		<header>
+			<h2>Free</h2>
+		</header>
+	</section>
+</div></div>
+
+<div id="whatsapp-kidding" class="slide shout"><div>
+	<section>
+		<header>
+			<h2>Just kidding</h2>
+		</header>
+
+		 <ul class="oneline demourl">
+			<li>It's trendy since Apple offers free software on keynotes</li>
+		</ul>
+	</section>
+</div></div>
+
+<div id="firefox-os-advantages" class="slide"><div>
+	<section>
+			<header>
+				<h2>Firefox OS offers</h2>
+			</header>
+			 <ul>
+				<li class="active">Ownership and control over relationships with customers</li>
+				<li>Customized phones that meet the specific needs of various target markets</li>
+				<li>Easier access to developers</li>
+			</ul>
+
+		</section>
+	</div>
+</div>
+
+<div id="is-thewebplatform" class="slide shout"><div>
+	<section>
+		<header>
+			<h2>Why The Web?</h2>
+		</header>
+	</section>
+</div></div>
+
+
+ <div id="potential-google" class="slide">
+ <div>
+	<section>
+		<header>
+			<h2>Huge potential</h2>
+		</header>
+		 <figure class="middle shadow frame">
+			<img width="420px" src="pictures/chrome-book.png" alt="Chrome Book" class="middle">
+		</figure>
+
+		 <ul class="oneline demourl">
+			<li>Google Chromebook</li>
+		</ul>
+	</section>
+</div>
+</div>
+
+ <div id="potential-glass" class="slide">
+ <div>
+	<section>
+		<header>
+			<h2>Huge potential</h2>
+		</header>
+		 <figure class="middle">
+			<img width="700px" src="pictures/glass-html.png" alt="Chrome Book" class="middle">
+		</figure>
+
+		 <ul class="oneline demourl">
+			<li>Google Glass</li>
+		</ul>
+	</section>
+</div>
+</div>
+
+ <div id="potential-amazon" class="slide">
+ <div>
+	<section>
+		<header>
+			<h2>Huge potential</h2>
+		</header>
+		<a style="background: #FFF; border: 1px solid #DDD; display: block; margin-top: 10px; text-align: center;" href="https://www.youtube-nocookie.com/embed/HR0DcbG3k1M?hl=en_US&amp;modestbranding=1" title="Video: Amazon Mobile App Distribution Portal now accepting web apps!" class="video iframe"><img height="261" src="https://images-na.ssl-images-amazon.com/images/G/01/mobile-apps/devportal2/content/sdk/images/videoGrab._V381238357_.png"></a>
+
+		 <ul class="oneline demourl">
+			<li>Amazon App Store supports Web Apps</li>
+		</ul>
+	</section>
+</div>
+</div>
+
+ <div id="potencial-games" class="slide quote">
+ <div>
+	<section>
+		<header>
+			<h2>The future of gaming</h2>
+		</header>
+		 <blockquote>
+        <p>
+          It marks the end of drivers, installation, all the other weird quirks of legacy game development
+        </p>
+        <p class="quotesource">Tim Sweeney, Epic Games</p>
+      </blockquote>
+	</section>
+</div>
+</div>
+
+<div id="just-javascript-demo" class="slide shout"><div>
+	<section>
+		<header>
+			<h2>DEMO</h2>
+		</header>
+		 <ul class="oneline demourl">
+				<li>GooEngine and Asm.js</li>
+			</ul>
+	</section>
+</div></div>
+
+
+<div id="webrtc" class="slide shout"><div>
+	<section>
+		<header>
+			<h2>WEBRTC</h2>
+		</header>
+		 <ul class="oneline demourl">
+				<li>No plugins, only the browser</li>
+			</ul>
+	</section>
+</div></div>
+
+<div id="webrtc-demo" class="slide shout"><div>
+	<section>
+		<header>
+			<h2>DEMO</h2>
+		</header>
+		 <ul class="oneline demourl">
+				<li>Talky.io</li>
+			</ul>
+	</section>
+</div></div>
+
+<div id="inyourdesktop" class="slide"><div>
+	<section>
+		<header>
+			<h2>Multiplatform</h2>
+		</header>
+
+			<a href="https://marketplace.firefox.com/" target="_blank"><img width="680px" src="pictures/appsmac.png" alt="" class="middle"></a>
+
+		 <ul class="oneline demourl">
+			<li>Install apps everywhere, even like a native OS app</li>
+		</ul>
+	</section>
+</div></div>
+
+
+<div id="inyourdesktop-demo" class="slide shout"><div>
+	<section>
+		<header>
+			<h2>DEMO</h2>
+		</header>
+		 <ul class="oneline demourl">
+				<li>Installing a Web App on a native OS</li>
+			</ul>
+	</section>
+</div></div>
+
+<div id="app-maker" class="slide"><div>
+	<section>
+		<header>
+			<h2>Introducing App Maker</h2>
+		</header>
+		 <figure class="middle shadow frame">
+			<img src="pictures/app-maker.png" alt="App Maker" class="middle">
+		</figure>
+		 <ul class="oneline demourl">
+			<li>We want to make it possible for anyone to make amazing personal mobile apps</li>
+		</ul>
+	</section>
+</div></div>
+
+<div id="nosdk" class="slide"><div>
+	<section>
+		<header>
+			<h2>¡NO SDK!</h2>
+		</header>
+		 <figure class="middle shadow frame">
+			<img src="pictures/no-sdk.png" alt="No SDK" class="middle">
+		</figure>
+		 <ul class="oneline demourl">
+			<li>Choose your favorite IDE</li>
+		</ul>
+	</section>
+</div></div>
+
+<div id="thewebplatform" class="slide shout"><div>
+	<section>
+		<header>
+			<h2>The web is the platform</h2>
+		</header>
+	</section>
+</div></div>
+
+
+
+<div id="thanks" class="slide"><div>
+	<section>
+		<header>
+			<h2>Thanks!</h2>
+		</header>
+			<figure class="frame middle swing">
+			<img src="pictures/CuteFirefoxGoodbye.png"
+					 width="600"
+					 alt="that's all firefox">
+			</figure>
+	</section>
+</div></div>
+
+<div class="progress"><div></div>
+</div>
+
+	<script src="scripts/script.js"></script>
+	<!-- Copyright © 2010–2012 Vadim Makeev — pepelsbey.net -->
+</body>
+</html>
